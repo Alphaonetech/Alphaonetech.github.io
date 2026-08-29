@@ -1,0 +1,46 @@
+/* Mobile layout fixes */
+html,body{width:100%;max-width:100%;overflow-x:hidden}
+
+@media (max-width:900px){
+  .contact-strip{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    gap:30px!important;
+    padding:55px 6%!important;
+    width:100%!important;
+    min-width:0!important;
+  }
+  .contact-strip>div{min-width:0!important;width:100%!important}
+  .contact-strip h2{font-size:clamp(38px,10vw,56px)!important;line-height:1.05!important;word-break:normal!important;margin:10px 0 18px!important}
+  .contact-strip p:not(.eyebrow){font-size:16px!important;line-height:1.65!important;max-width:100%!important}
+  .contact-strip-card{
+    display:flex!important;
+    flex-direction:column!important;
+    gap:12px!important;
+    width:100%!important;
+    min-width:0!important;
+    padding:24px!important;
+    box-sizing:border-box!important;
+  }
+  .contact-strip-card>strong:first-child{display:block!important;font-size:18px!important;line-height:1.35!important;white-space:normal!important;word-break:break-word!important}
+  .contact-strip-card>span{display:block!important;font-size:13px!important;line-height:1.6!important;white-space:normal!important;word-break:break-word!important}
+  .contact-strip-card a.btn{width:100%!important;justify-content:center!important;text-align:center!important;box-sizing:border-box!important;margin-top:6px!important}
+
+  .hero,.about-band,.services-band,.partners-band,.work-band,.partner-band,.why-band{width:100%!important;min-width:0!important}
+  .hero-copy,.about-copy,.service-intro,.work-intro,.partners-intro,.why-title{min-width:0!important}
+  .lead{max-width:100%!important}
+  .actions{flex-wrap:wrap!important}
+  .service-grid{width:100%!important;min-width:0!important}
+  .work-grid{width:100%!important;min-width:0!important}
+
+  .nav{width:100%!important;max-width:100%!important}
+  .logo{max-width:calc(100vw - 100px)!important;height:auto!important}
+}
+
+@media (max-width:480px){
+  .contact-strip{padding:48px 20px!important}
+  .contact-strip h2{font-size:40px!important}
+  .contact-strip-card{padding:20px!important}
+  .contact-strip-card>strong:first-child{font-size:16px!important}
+  .contact-strip-card a.btn{font-size:11px!important;padding:13px 12px!important}
+}
